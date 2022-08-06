@@ -24,3 +24,9 @@ var {price, title, memo = "無し"} = obj; // オブジェクトの分割代入�
 console.log("price: ", price);
 console.log("title: ", title);
 console.log("memo: ", memo);
+
+var ttl, company;
+({title: ttl, publish: company} = obj); // 別名の変数に代入する。
+
+console.log("ttl: ", ttl);
+console.log("company: ", company);
