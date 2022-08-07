@@ -26,6 +26,7 @@ console.log("title: ", title);
 console.log("memo: ", memo);
 
 var ttl, company;
+// {}がブロックとして認識されてしまうため、代入文にするために全体を()で囲む必要がある。
 ({title: ttl, publish: company} = obj); // 別名の変数に代入する。
 
 console.log("ttl: ", ttl);
