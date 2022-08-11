@@ -6,6 +6,10 @@ function default_argument(a, b = 1) { // 呼び出し時に指定されていな
 console.log(`${default_argument(2)}`);
 console.log(`${default_argument(2, 2)}`);
 
+// デフォルト値が適用されるのは、undefinedの時だけ。
+console.log(`${default_argument(5, undefined)}`);
+console.log(`${default_argument(5, null)}`); // nullはnullという値として扱われる。結果は5 + nullで0となる。
+
 // **** 引数の数が合わないとき ****
 const unmatch_argument = function(a, b, c) {
     console.log(`arg a: ${a}`);
